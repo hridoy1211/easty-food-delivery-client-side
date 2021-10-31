@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
 import { Link } from 'react-router-dom';
 import './Services.css'
 
@@ -10,6 +11,9 @@ const Services = () => {
         .then(res => res.json())
         .then(data => setServices(data))
     },[])
+
+
+
 
     return (
         <div className='container'>

@@ -11,29 +11,31 @@ const Contacts = () => {
                 <h3>Get in Touch</h3>
                 <small>We are available 24/7 by fax, e-mail or by phone. You can also use our quick contact form to ask a question about our services that we offer on a regular basis. We would be pleased to answer your questions.</small>
             </div>
+            
                 <form className="row g-3">
-  <div className="col-md-6">
-    <label for="inputEmail4" className="form-label">NAME</label>
-    <input type="text" className="form-control" id="inputEmail4" placeholder="Enter your Name"/>
-  </div>
-  <div className="col-md-6">
-    <label for="inputPassword4" className="form-label">PHONE</label>
-    <input type="text" className="form-control" id="inputPassword4" placeholder="Enter Phone"/>
-  </div>
-  <div className="col-12">
-    <label for="inputAddress" className="form-label">YOUR MESSAGE</label>
-    <textarea type="text" className="form-control text-area" id="inputAddress" placeholder="Write your message here"/>
-  </div>
-  <div className="col-md-6">
-    <label for="inputCity" className="form-label">EMAIL</label>
-    <input type="email" className="form-control" id="inputCity" placeholder="Enter Email"/>
-  </div>
- 
-  <div class="d-grid gap-2 col-6 mx-auto">
-  <button class="btn submit-btn" type="button">Send Message</button>
-</div>
-  
-</form>
+                    <div className="col-md-6">
+                        <label for="inputEmail4" className="form-label">NAME</label>
+                        <input type="text" className="form-control" id="inputEmail4" placeholder="Enter your Name"/>
+                    </div>
+                    <div className="col-md-6">
+                        <label for="inputPassword4" className="form-label">PHONE</label>
+                        <input type="text" className="form-control" id="inputPassword4" placeholder="Enter Phone"/>
+                    </div>
+                    <div className="col-12">
+                        <label for="inputAddress" className="form-label">YOUR MESSAGE</label>
+                        <textarea type="text" className="form-control text-area" id="inputAddress" placeholder="Write your message here"/>
+                    </div>
+                    <div className="col-md-6">
+                        <label for="inputCity" className="form-label">EMAIL</label>
+                        <input type="email" className="form-control" id="inputCity" placeholder="Enter Email"/>
+                    </div>
+                    
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn submit-btn" type="button">Send Message</button>
+                    </div>
+                </form>
+
+
                 </div>
                 <div className="col-md-4 my-5 list-design px-5">
                     <div>

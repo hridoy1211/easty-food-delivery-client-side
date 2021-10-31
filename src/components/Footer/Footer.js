@@ -1,8 +1,8 @@
 import React from 'react';
 import './Footer.css';
-import { Link } from 'react-router-dom';
 import logo from '../../Images/logo/logo.png'
 import billSource from '../../Images/footer/pay-source.png'
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
