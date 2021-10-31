@@ -20,6 +20,8 @@ import SingleService from './components/SingleService/SingleService';
 import ManageServices from './components/ManageServices/ManageServices';
 import NotFound from './components/NotFound/NotFound';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Cart from "./components/Cart/Cart";
+import MyOrder from "./components/MyOrder/MyOrder";
 
 function App() {
   return (
@@ -54,8 +56,16 @@ function App() {
               <ManageServices></ManageServices>
           </Route>
 
+          <Route path='/myOrder'>
+              <MyOrder></MyOrder>
+          </Route>
+
           <PrivateRoute path='/singleService/:id'>
               <SingleService></SingleService>
+          </PrivateRoute>
+
+          <PrivateRoute path='/cart'>
+              <Cart></Cart>
           </PrivateRoute>
 
           <Route path='*'>

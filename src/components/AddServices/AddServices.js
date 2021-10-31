@@ -24,8 +24,11 @@ const AddServices = () => {
             <h1 className='text-center my-4'>Please Add a Services</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
             <input {...register("name", { required: true, maxLength: 20 })} placeholder="Name" />
-            <textarea {...register("description")} placeholder="Description" />
             <input {...register("img")}  placeholder="Image URL"/>
+            <textarea {...register("description")} placeholder="Description" />
+            <textarea {...register("brand")} placeholder="Brand" />
+            <textarea {...register("offer")} placeholder="Offer" />
+            <textarea {...register("price")} placeholder="Price" />
             <input type="submit" />
             </form>
         </div>

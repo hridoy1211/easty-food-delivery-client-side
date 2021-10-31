@@ -27,9 +27,9 @@ const Header = () => {
           Services
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><Link to='/myOrder' class="dropdown-item" >My Order</Link ></li>
             <li><Link to='/addServices' class="dropdown-item" >Add Services</Link ></li>
             <li><Link to='/manageServices' class="dropdown-item" >Manage Services</Link ></li>
-            <li><Link to='/' class="dropdown-item" >Something else here</Link ></li>
           </ul>
         </li> : ''}
 

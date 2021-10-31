@@ -28,10 +28,20 @@ const Services = () => {
                             <h4 class="card-title text-center">{service.offer}</h4>
                             <h5 class="card-title text-center text-danger">{service.name}</h5>
                             <div className="button-style">
-                            <Link to={`/singleService/${service._id}`}><div className="d-grid gap-2 ">
-                                    <button className="btn btn-design" type="button">Purchase</button>
+                                <div className="row">
+                                    <div className="col-6">
+                                        <Link to={`/singleService/${service._id}`}><div className="d-grid gap-2 ">
+                                        <button className="btn btn-design" type="button">Details</button>
+                                        </div>
+                                        </Link>
+                                    </div>
+                                    <div className="col-6">
+                                        <Link to='/cart' ><div className="d-grid gap-2 ">
+                                        <button className="btn btn-design2" type="button">Purchase</button>
+                                        </div>
+                                        </Link>
+                                    </div>
                                 </div>
-                            </Link>
                             </div>
                         </div>
                     </div>
