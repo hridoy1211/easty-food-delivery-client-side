@@ -1,0 +1,8 @@
+.card-design:hover {
+  box-shadow: 1px 2px 20px #f58d8d;
+  transform: scale(1.03);
+  transition: transform 0.7s;
+}
+.button-style a {
+  text-decoration: none;
+}
