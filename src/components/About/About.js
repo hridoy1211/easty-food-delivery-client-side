@@ -14,11 +14,11 @@ const About = () => {
                 <br />
                 <div>
                     <h3 className='about-title-color'>Why choose eatsy?</h3>
-                    <p><i class="fas fa-check"></i>  <span className='gray-color'>More options: food delivery from 2000+ restaurants in Dhaka, Chittagong and Sylhet in Bangladesh, as well as Bangladesh grocery delivery and more from shop partners. Order from cuisines ranging from fast food, to sushi, to cakes. Shop online for everything from fresh produce to electronics.</span></p>
-                    <p><i class="fas fa-check"></i>  <span className='gray-color'>Easy search: filter by cuisine or location, or simply type in the name of the bsiness you want.</span></p>
-                    <p><i class="fas fa-check"></i>  <span className='gray-color'>Various offers: indulge in the endless discounts and offers available from top restaurants and shops</span></p>
-                    <p><i class="fas fa-check"></i>  <span className='gray-color'>Payment options: Payment made easier with cash on delivery and online payment options</span></p>
-                    <p><i class="fas fa-check"></i>  <span className='gray-color'>A simple 4-step food ordering process: Search → Choose → Pay → Enjoy</span></p>
+                    <p><i className="fas fa-check"></i>  <span className='gray-color'>More options: food delivery from 2000+ restaurants in Dhaka, Chittagong and Sylhet in Bangladesh, as well as Bangladesh grocery delivery and more from shop partners. Order from cuisines ranging from fast food, to sushi, to cakes. Shop online for everything from fresh produce to electronics.</span></p>
+                    <p><i className="fas fa-check"></i>  <span className='gray-color'>Easy search: filter by cuisine or location, or simply type in the name of the bsiness you want.</span></p>
+                    <p><i className="fas fa-check"></i>  <span className='gray-color'>Various offers: indulge in the endless discounts and offers available from top restaurants and shops</span></p>
+                    <p><i className="fas fa-check"></i>  <span className='gray-color'>Payment options: Payment made easier with cash on delivery and online payment options</span></p>
+                    <p><i className="fas fa-check"></i>  <span className='gray-color'>A simple 4-step food ordering process: Search → Choose → Pay → Enjoy</span></p>
                 
                 </div>
 
@@ -35,10 +35,10 @@ const About = () => {
                     <h3 className='about-title-color'>Get grocery delivery in Bangladesh with eatsy shops</h3>
                     <p className='gray-color'>Missing milk? Batteries? Detergent? eatsy shops delivers all your essential grocery items through the eatsy app. It's everyday online shopping made easy. Choose anything from daily essentials to grocery to health to pharmaceuticals and even electronics. Head to checkout and our pandamart rider will be at your door in a flash.</p>
                     <br />
-                    <p><i class="fas fa-check"></i>  <span className='gray-color'>over 20,000 items</span></p>
-                    <p><i class="fas fa-check"></i>  <span className='gray-color'>select your grocery store</span></p>
-                    <p><i class="fas fa-check"></i>  <span className='gray-color'>everyday affordable items delivered</span></p>
-                    <p><i class="fas fa-check"></i>  <span className='gray-color'>25 minute average delivery time</span></p>
+                    <p><i className="fas fa-check"></i>  <span className='gray-color'>over 20,000 items</span></p>
+                    <p><i className="fas fa-check"></i>  <span className='gray-color'>select your grocery store</span></p>
+                    <p><i className="fas fa-check"></i>  <span className='gray-color'>everyday affordable items delivered</span></p>
+                    <p><i className="fas fa-check"></i>  <span className='gray-color'>25 minute average delivery time</span></p>
                 </div>
 
                 <hr />

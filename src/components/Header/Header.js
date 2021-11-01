@@ -22,14 +22,14 @@ const Header = () => {
           <Link to='/home' className="nav-link nav-links" aria-current="page" ><span>Home</span></Link>
         </li>
 
-        {user.email? <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        {user.email? <li className="nav-item dropdown">
+          <a className="nav-link dropdown-toggle" href="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Services
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><Link to='/myOrder' class="dropdown-item" >My Order</Link ></li>
-            <li><Link to='/addServices' class="dropdown-item" >Add Services</Link ></li>
-            <li><Link to='/manageServices' class="dropdown-item" >Manage Services</Link ></li>
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><Link to='/myOrder' className="dropdown-item" >My Order</Link ></li>
+            <li><Link to='/addServices' className="dropdown-item" >Add Services</Link ></li>
+            <li><Link to='/manageServices' className="dropdown-item" >Manage Services</Link ></li>
           </ul>
         </li> : ''}
 

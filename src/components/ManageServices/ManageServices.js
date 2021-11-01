@@ -29,14 +29,14 @@ const ManageServices = () => {
 
     return (
         <div className='container margin-adjust'>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div className="row row-cols-1 row-cols-md-3 g-4">
                 {
                     manage.map(pd => 
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src={pd.img} class="card-img-top img-fluid p-4" alt="..."/>
-                        <div class="card-body">
-                            <h5 class="card-title text-center">{pd.name}</h5>
+                    <div key={pd._id} className="col">
+                        <div className="card h-100">
+                            <img src={pd.img} className="card-img-top img-fluid p-4" alt="..."/>
+                        <div className="card-body">
+                            <h5 className="card-title text-center">{pd.name}</h5>
                             <div className="button-style">
                             <div className="d-grid gap-2 ">
                                     <button onClick={() => handleDelete(pd._id)} className="btn btn-design" type="button">Delete</button>

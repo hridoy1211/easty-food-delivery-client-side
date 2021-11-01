@@ -18,15 +18,15 @@ const Services = () => {
     return (
         <div className='container'>
             <h1 className='my-5 text-center'>Biggest Offers</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div className="row row-cols-1 row-cols-md-3 g-4">
                 {
                     services.map(service => 
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src={service.img} class="card-img-top img-fluid p-4" alt="..."/>
-                        <div class="card-body">
-                            <h4 class="card-title text-center">{service.offer}</h4>
-                            <h5 class="card-title text-center text-danger">{service.name}</h5>
+                    <div key={service._id} className="col">
+                        <div className="card h-100">
+                            <img src={service.img} className="card-img-top img-fluid p-4" alt="..."/>
+                        <div className="card-body">
+                            <h4 className="card-title text-center">{service.offer}</h4>
+                            <h5 className="card-title text-center text-danger">{service.name}</h5>
                             <div className="button-style">
                                 <div className="row">
                                     <div className="col-6">
@@ -37,7 +37,7 @@ const Services = () => {
                                     </div>
                                     <div className="col-6">
                                         <Link to='/cart' ><div className="d-grid gap-2 ">
-                                        <button className="btn btn-design2" type="button">Purchase</button>
+                                        <button  className="btn btn-design2" type="button">Purchase</button>
                                         </div>
                                         </Link>
                                     </div>

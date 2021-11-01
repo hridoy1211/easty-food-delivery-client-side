@@ -32,8 +32,18 @@ import feedbackImg3 from '../../Images/feedback/person-3.webp'
 import sideCard1 from '../../Images/side-card/side-card-1.jpg'
 import sideCard2 from '../../Images/side-card/side-card-2.jpg'
 import Services from '../Services/Services';
+import useAuth from '../../hooks/useAuth';
 
 const Home = () => {
+    const {isLoadding} = useAuth()
+    if(isLoadding){
+        return <div className="d-flex justify-content-center" style={{marginTop: '100px'}}>
+        <div className="spinner-border text-danger" style={{width: '3rem', height: '3rem'}} role="status">
+          <span className="visually-hidden ">Loading...</span>
+        </div>
+      </div>
+    }
+
     return (
         <div>
             <section>
@@ -198,40 +208,40 @@ const Home = () => {
             <section className='margin-adjust container'>
                 <div className="row">
                     <div className="col-md-6">
-                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                        <img src={feedbackImg1} class="d-block w-25 feedback-profiles mb-3 mx-auto" alt="..."/>
-                        <div class="text-center">
+                    <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                        <img src={feedbackImg1} className="d-block w-25 feedback-profiles mb-3 mx-auto" alt="..."/>
+                        <div className="text-center">
                     <h5>Ashfia Ahmed</h5>
                     
                   </div>
                   <p>Loved the service! I urgently needed some stuffs and ordered it here and they delivered in less than an hour as promised! Thanks a lot for that. I am very grateful to have this service in our city. You make dinner a no-brainer on those crazy/lazy nights. I also wanted you to know that everyone of the delivery people have been the nicest and most polite people. Satisfied by their professionalism ! Got my tea bags in time. Didn't have to pay any delivery charge. I can't believe that. Keep it up !</p>
                     </div>
-                        <div class="carousel-item">
-                        <img src={feedbackImg2} class="d-block w-25 feedback-profiles mb-3 mx-auto" alt="..."/>
-                        <div class="text-center">
+                        <div className="carousel-item">
+                        <img src={feedbackImg2} className="d-block w-25 feedback-profiles mb-3 mx-auto" alt="..."/>
+                        <div className="text-center">
                     <h5>Shampa Shahriyar</h5>
                     
                   </div>
                   <p>I want to order something (A perfume) for my mom at BD. Although the delivery area was out of their scope, their support team instantly replied to my query and manged to deliver the product. The best thing I noticed, they informed step by step updated news about the order processing.I'd like to acknowledge Food Delivery for their pleasanr help today when I called to place a last minute order for a meeting. I struggled with what to order and your team helped with selection and made everything easy for me.</p>
                     </div>
-                        <div class="carousel-item">
-                        <img src={feedbackImg3} class="d-block w-25 feedback-profiles mb-3 mx-auto" alt="..."/>
-                        <div class="text-center">
+                        <div className="carousel-item">
+                        <img src={feedbackImg3} className="d-block w-25 feedback-profiles mb-3 mx-auto" alt="..."/>
+                        <div className="text-center">
                     <h5>Abedul Hoque Rakib</h5>
                     
                   </div>
                   <p>I have been shopping from Eatsy for the past few months and i am loving the experience. Have been shopping from here and i have recommended my relatives too. They are also happy with the service. The prices are comparatively low and the products are genuine. Your female employee on the phone was so kind yesterday! She took my order, got it exactly correct, and my food arrived. The delivery man was also very good. The level of service was also outstanding, thank you!</p>
                 </div>
             </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
+                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
+                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="visually-hidden">Next</span>
                     </button>
             </div>
                     </div>
@@ -242,15 +252,15 @@ const Home = () => {
                     <div className="col-md-6">
                     <div className="row">
                         <div className="col-md-12">
-                        <div class="card mb-3" style={{maxWidth: "540px"}}>
-                <div class="row g-0">
-                    <div class="col-md-6">
-                    <img src={sideCard1} class="img-fluid rounded-start h-100 p-3" alt="..."/>
+                        <div className="card mb-3" style={{maxWidth: "540px"}}>
+                <div className="row g-0">
+                    <div className="col-md-6">
+                    <img src={sideCard1} className="img-fluid rounded-start h-100 p-3" alt="..."/>
                     </div>
-                    <div class="col-md-6">
-                    <div class="card-body">
-                        <h5 class="card-title">1st Time Registration?</h5>
-                        <p class="card-text">For the first time in website registration, you will get 3 qoupns (2%, 3% and 5%). Register now and win these offer.</p>
+                    <div className="col-md-6">
+                    <div className="card-body">
+                        <h5 className="card-title">1st Time Registration?</h5>
+                        <p className="card-text">For the first time in website registration, you will get 3 qoupns (2%, 3% and 5%). Register now and win these offer.</p>
         
                     </div>
                     </div>
@@ -258,15 +268,15 @@ const Home = () => {
                     </div>
                         </div>
                         <div className="col-md-12">
-                        <div class="card mb-3" style={{maxWidth: "540px"}}>
-                <div class="row g-0">
-                    <div class="col-md-6">
-                    <img src={sideCard2} class="img-fluid rounded-start h-100 p-3" alt="..."/>
+                        <div className="card mb-3" style={{maxWidth: "540px"}}>
+                <div className="row g-0">
+                    <div className="col-md-6">
+                    <img src={sideCard2} className="img-fluid rounded-start h-100 p-3" alt="..."/>
                     </div>
-                    <div class="col-md-6">
-                    <div class="card-body">
-                        <h5 class="card-title">Reference Offer</h5>
-                        <p class="card-text">500 taka coupon free if you make a reference. The more references the more offers. LOOT NOW!!</p>
+                    <div className="col-md-6">
+                    <div className="card-body">
+                        <h5 className="card-title">Reference Offer</h5>
+                        <p className="card-text">500 taka coupon free if you make a reference. The more references the more offers. LOOT NOW!!</p>
         
                 </div>
                 </div>

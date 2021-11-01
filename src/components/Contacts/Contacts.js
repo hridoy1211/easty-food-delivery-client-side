@@ -14,24 +14,24 @@ const Contacts = () => {
             
                 <form className="row g-3">
                     <div className="col-md-6">
-                        <label for="inputEmail4" className="form-label">NAME</label>
+                        <label htmlFor="inputEmail4" className="form-label">NAME</label>
                         <input type="text" className="form-control" id="inputEmail4" placeholder="Enter your Name"/>
                     </div>
                     <div className="col-md-6">
-                        <label for="inputPassword4" className="form-label">PHONE</label>
+                        <label htmlFor="inputPassword4" className="form-label">PHONE</label>
                         <input type="text" className="form-control" id="inputPassword4" placeholder="Enter Phone"/>
                     </div>
                     <div className="col-12">
-                        <label for="inputAddress" className="form-label">YOUR MESSAGE</label>
+                        <label htmlFor="inputAddress" className="form-label">YOUR MESSAGE</label>
                         <textarea type="text" className="form-control text-area" id="inputAddress" placeholder="Write your message here"/>
                     </div>
                     <div className="col-md-6">
-                        <label for="inputCity" className="form-label">EMAIL</label>
+                        <label htmlFor="inputCity" className="form-label">EMAIL</label>
                         <input type="email" className="form-control" id="inputCity" placeholder="Enter Email"/>
                     </div>
                     
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn submit-btn" type="button">Send Message</button>
+                    <div className="d-grid gap-2 col-6 mx-auto">
+                    <button className="btn submit-btn" type="button">Send Message</button>
                     </div>
                 </form>
 
@@ -52,21 +52,21 @@ const Contacts = () => {
 
                     <div>
                         <h4>PHONE</h4>
-                        <i class="fas fa-phone-alt"></i> &nbsp;&nbsp; <span>1-800-1218-326</span>
+                        <i className="fas fa-phone-alt"></i> &nbsp;&nbsp; <span>1-800-1218-326</span>
                     </div>
 
                     <hr />
 
                     <div>
                         <h4>ADDRESS</h4>
-                        <i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; <span>267 Bongobondhu Avenue, Dhaka-1203 </span>
+                        <i className="fas fa-map-marker-alt"></i> &nbsp;&nbsp; <span>267 Bongobondhu Avenue, Dhaka-1203 </span>
                     </div>
 
                     <hr />
 
                     <div>
                         <h4>OPENING HOURS</h4>
-                        <i class="far fa-clock"></i> &nbsp;&nbsp; <span>9:00am - 23:00pm</span>
+                        <i className="far fa-clock"></i> &nbsp;&nbsp; <span>9:00am - 23:00pm</span>
                     </div>
                 </div>
             </div>

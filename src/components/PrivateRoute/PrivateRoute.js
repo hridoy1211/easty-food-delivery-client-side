@@ -7,9 +7,9 @@ const PrivateRoute = (props) => {
     const {user, isLoadding} = useAuth()
 
     if(isLoadding){
-        return <div class="d-flex justify-content-center mt-3">
-        <div class="spinner-border text-danger" style={{width: '3rem', height: '3rem'}} role="status">
-          <span class="visually-hidden ">Loading...</span>
+        return <div className="d-flex justify-content-center" style={{marginTop: '100px'}}>
+        <div className="spinner-border text-danger" style={{width: '3rem', height: '3rem'}} role="status">
+          <span className="visually-hidden ">Loading...</span>
         </div>
       </div>
     }
